@@ -52,4 +52,20 @@ The only operation is the addition("+"), so if it's a thousand (n) we will still
 def add_items(n):
   return n + n + n 
 O(1) = Constant time = as n increase the number of operations will remain constant. 
+-------------------------------------------------------------------------------------------------------
+let's say there are numbers from 1-8 
+1 2 3 4 5 6 7 8 (sorted)
+
+let's find any number in the list, let say 1
+now break the list of numbers in half 
+
+1 2 3 4  || 5 6 7 8
+1 2 || 3 4
+1 || 2
+we took 3 steps to find a number(1) from eight numbers 
+
+let say we have 1,07,37,41,824 = This number will be cut into half 31 times. 
+
+So, the above cases are examples of O(log n)
+--------------------------------------------------------------------------------------------------------
 
