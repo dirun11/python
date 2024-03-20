@@ -1,4 +1,4 @@
-def print_items:
+def print_items(n):
   for i in range(n):
     print(i)
 print(10)
@@ -9,7 +9,7 @@ O(N): We passed number n as an argument to the function and then it is been iter
       So, whatever N was that was the number of operations
 NOTE: Proportional in BigO is O(N), reason graph
 ---------------------------------------------------------------------------------------------------
-def print_items:
+def print_items(n):
   for i in range(n):
     print(i)
 
@@ -20,7 +20,7 @@ print(10)
 O/P: 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 = n+n = 2n = O(2n)= O(n)
 This is a use case for "Droping Constants"
 ----------------------------------------------------------------------------------------------------
-def print_items:
+def print_items(n):
   for i in range(n):
     for j in range(n):
       print(i,j)
@@ -30,7 +30,7 @@ O/P: 0 0, 0 1, 0 2, 0 3, .... 9 9 = n*n = O(n^2)      # in O/p ',' is excluded
 -------------------------------------------------------------------------------------------------------
 Drop Non-Dominants
 
-def print_items:
+def print_items(n):
   for i in range(n):
     for j in range(n):
       print(i,j)
@@ -68,4 +68,17 @@ let say we have 1,07,37,41,824 = This number will be cut into half 31 times.
 
 So, the above cases are examples of O(log n)
 --------------------------------------------------------------------------------------------------------
+Different Terms for Inputs
 
+def print_items(a,b):
+  for i in range(a):
+    print(i)      # O(a)
+  for j in range(b):
+    print(j)     # O(b)
+=> O(a+b)
+
+def print_items(a,b):
+  for i in range(a):
+    for j in range(b):
+      print(i,j)
+=> O(a*b)
